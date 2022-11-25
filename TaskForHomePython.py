@@ -20,4 +20,9 @@ else:
 #для всех значений предикат.
 
 print('Задача №2')
-
+predicate = [True, False]
+for x in predicate:
+    for y in predicate:
+        for z in predicate:
+            res = not (x or y or z) == (not x) and (not y) and (not z)
+            print('X=', x, 'Y=', 'Z=', z, ':' '¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z' '=', res)
